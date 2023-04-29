@@ -139,3 +139,7 @@ button:hover {
     -webkit-transition: 500ms;
     transition: 500ms;
   }
+ footer {
+    justify-content: center;
+    align-items: center;
+    }
