@@ -21,6 +21,7 @@ h2, h3, h4 {
 ul {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(255, 196, 0, 0.942);
-    text-align: center;
+    text-align: left;
+    margin-left: 475px;
     list-style: none;
 }
