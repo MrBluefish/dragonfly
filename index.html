@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dragonfly Martial Arts and Fitness</title>
+    <link rel="stylesheet" href="dragonfly.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  </head>
+  <body>
+    <header>
+      <h1>WELCOME TO<br>
+      DRAGONFLY MARTIAL<br>
+      ARTS AND FITNESS</h1>
+      <div class="logo">
+        <img src="https://rebrand.ly/b72ojnm" alt="Dragonfly Martial Arts and Fitness">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="about.html"><button data-text="Awesome" class="button">
+            <span class="actual-text">&nbsp;About&nbsp;</span>
+            <span class="hover-text" aria-hidden="true">&nbsp;About&nbsp;</span>
+          </button></a></li>
+          <li><a href="ajarn.html"><button data-text="Awesome" class="button">
+            <span class="actual-text">&nbsp;Ajarn&nbsp;</span>
+            <span class="hover-text" aria-hidden="true">&nbsp;Ajarn&nbsp;</span>
+          </button></a></li>
+          <li><a href="schedule.html"><button data-text="Awesome" class="button">
+            <span class="actual-text">&nbsp;Schedule&nbsp;</span>
+            <span class="hover-text" aria-hidden="true">&nbsp;Schedule&nbsp;</span>
+          </button></a></li>
+          <li><a href="contact.html"><button data-text="Awesome" class="button">
+            <span class="actual-text">&nbsp;Contact&nbsp;</span>
+            <span class="hover-text" aria-hidden="true">&nbsp;Contact&nbsp;</span>
+        </button></a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <h2 class="w3-center">TRAINING AT DRAGONFLY</h2>
+
+      <div class="hero img" style="max-width:500px">
+        <img class="mySlides w3-animate-fading" src="https://rebrand.ly/bkngw9v/" alt="dragonfly training" style="width:60%">
+        <img class="mySlides w3-animate-fading" src="https://rebrand.ly/jrrg29w" alt="dragonfly training" style="width:60%">
+        <img class="mySlides w3-animate-fading" src="https://rebrand.ly/8xt03qh" alt="dragonfly training" style="width:60%">
+        <img class="mySlides w3-animate-fading" src="https://rebrand.ly/8z6fvkn" alt="dragonfly class" style="width:60%">
+        <img class="mySlides w3-animate-fading" src="https://rebrand.ly/bx40a3i" alt="dragonfly training" style="width:60%">
+        <img class="mySlides w3-animate-fading" src="https://rebrand.ly/itrug8c" alt="dragonfly class" style="width:60%">
+        <img class="mySlides w3-animate-fading" src="https://rebrand.ly/c3qhsxl" alt="dragonfly class" style="width:60%">
+
+      </div>
+      
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+      }
+      </script>
+    </section>
+    <section class="services">
+
+    
+    <footer>
+      <p> &copy; 2023 The Sabucco Syndicate</p>
+    </footer>
+  </body>
+</html>

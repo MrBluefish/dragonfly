@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <h1>Contact</h1>
+    <div class="form">
+        <div class="subtitle">Let's create your account!</div>
+        <div class="input-container ic1">
+          <input id="firstname" class="input" type="text" placeholder="">
+          <div class="cut"></div>
+          <label for="firstname" class="placeholder"><strong>First name</strong></label>
+        </div>
+        <div class="input-container ic2">
+          <input id="lastname" class="input" type="text" placeholder="">
+          <div class="cut"></div>
+          <label for="lastname" class="placeholder"><strong>Last name</strong></label>
+        </div>
+        <div class="input-container ic2">
+          <input id="email" class="input" type="text" placeholder="">
+          <div class="cut cut-short"></div>
+          <label for="email" class="placeholder"><strong>Email</strong>
+        </label></div>
+        <button type="submit" class="submit"><strong>submit</strong></button>
+      </div>
+      <!-- Add this script to your HTML file -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  // Initialize EmailJS with your user ID
+  emailjs.init("sOPpYnYMAOyvZMozv");
+
+  // Add an event listener to the submit button
+  document.querySelector('.submit').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the form from submitting
+
+    // Get the user input values from the form
+    const firstName = document.getElementById('firstname').value;
+    const lastName = document.getElementById('lastname').value;
+    const email = document.getElementById('email').value;
+
+    // Use the EmailJS send method to send the email
+    emailjs.send("service_n95a2bm", "template_ugp913i", {
+      from_name: firstName + " " + lastName,
+      to_name: "gsabucco@gmail.com",
+      message: "Email: " + email
+    })
+    .then(function(response) {
+      console.log("SUCCESS", response);
+    }, function(error) {
+      console.log("FAILED", error);
+    });
+  });
+</script>
+
+</body>
+</html>

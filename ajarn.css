@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+}
+
+h1 {
+   font-family: Arial, Helvetica, sans-serif;
+   color: rgba(255, 196, 0, 0.942);
+   border: solid;
+   border-color: gold;
+   border-radius: 5px;
+   text-align: center;
+}
+
+.ajarn-ken {
+    width: 300px;
+    height:auto;
+    margin-top: 20px;
+    margin-left: 450px;
+    margin-right:500px;
+    border-bottom: 2px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 15px gold,
+    -2px -1px 15px #f4f5f8;
+
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 196, 0, 0.942);
+    text-align: center;
+}
+
+footer {
+    margin-top: 20px;
+    margin-left: 450px;
+    margin-right:500px;
+    padding-bottom: 10px;
+    border-bottom: 2px;
+}
+.logo-row{
+    text-align: center;
+}
+.logo {
+    display:inline-flex;
+    width:350px;
+    height:350px;
+    text-align: center;
+}
+  
