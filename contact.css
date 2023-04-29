@@ -140,6 +140,7 @@ button:hover {
     transition: 500ms;
   }
  footer {
+    display: flex;
     justify-content: center;
     align-items: center;
     }
