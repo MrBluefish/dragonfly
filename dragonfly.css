@@ -76,6 +76,32 @@ header {
 
 }
 
+.splash {
+  cursor: pointer;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 95%;
+  width: 95%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0);
+  transition: all ease-in-out 600ms;
+}
+
+.hidden {
+  transition: 0.5s;
+  display: none;
+}
+
+.ssplash-header {
+  height: 90%;
+  color: gold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* Hero section styles */
 .hero {
   background-size: cover;
