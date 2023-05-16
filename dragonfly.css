@@ -10,6 +10,7 @@ h1 {
   font-size: 45px;
   color:rgba(255, 196, 0, 0.942);
   margin-top: 2px;
+  text-align: center;
 }
 /* === removing default button style ===*/
 .button {
@@ -103,7 +104,6 @@ header {
   align-items: center;
   text-align: center;
 }
-
 .splash-info {
   color: gold;
   font-family: Arial, Helvetica, sans-serif;
@@ -111,6 +111,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 /* Hero section styles */
 .hero {
