@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    <h1>Contact</h1>
+    <h1>Contact Us</h1>
     <div class="form">
         <div class="subtitle">Let's create your account!</div>
         <div class="input-container ic1">
@@ -50,6 +50,10 @@
     })
     .then(function(response) {
       console.log("SUCCESS", response);
+      alert("Thank you for joining our mailing list!");
+      document.getElementById('firstname').value = '';
+      document.getElementById('lastname').value = '';
+      document.getElementById('email').value = '';
     }, function(error) {
       console.log("FAILED", error);
     });
@@ -57,7 +61,12 @@
 </script>
 
 </body>
-    <footer>
-      <p> &copy; 2023 The Sabucco Syndicate</p>
-    </footer>
+<footer>
+  <div class="logo">
+      <img src="https://rebrand.ly/b72ojnm" alt="Dragonfly Martial Arts and Fitness" width="55%" height="55%">
+  </div>
+  <div>
+      <p class="sabucco"> &copy; 2023 The Sabucco Syndicate</p>
+  </div>
+</footer>
 </html>
