@@ -1,8 +1,11 @@
+.home-button {
+    color:gold;
+}
 body {
     background-color: black;
 }
 h1 {
-  background-color: black;
+  background-color: rgb(192, 42, 42);
   font-family: Arial, Helvetica, sans-serif;
   color:rgb(255, 196, 0, 0.942) ;  
   text-align: center;
@@ -25,3 +28,23 @@ ul {
     margin-left: 475px;
     list-style: none;
 }
+
+.logo {
+    display:flex;
+    margin-left:10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.sabucco {
+    text-align: center;
+    color: rgb(255, 196, 0, 0.942);
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer {
+    margin-top: 90px;
+    margin-left: 450px;
+    margin-right:500px;
+    padding-bottom: 10px;
+    border-bottom: 2px;
+  }
