@@ -169,24 +169,66 @@ footer {
 
 @media only screen and (max-width: 600px) {
   /* CSS styles for screens smaller than 600px */
-  header {
-    /* Reduce the font size of the logo and header */
-    font-size: 16px;
-  }
   nav ul {
     /* Hide the navigation menu */
     display: none;
   }
- .splash {
-    /* Reduce the font size of the splash header */
-    font-size: 24px;
+ .menu-toggle {
+    /* Show the menu toggle button */
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
   }
- .hero {
-    /* Reduce the size of the hero images */
-    max-width: 300px;
+ .menu-toggle span {
+    /* Style the menu toggle button */
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 5px;
   }
- .services {
-    /* Reduce the font size of the services section */
-    font-size: 14px;
+ .menu-toggle span:nth-child(2) {
+    /* Style the second line of the menu toggle button */
+    width: 18px;
+  }
+ .menu-toggle.active span:nth-child(1) {
+    /* Rotate the first line of the menu toggle button when the menu is open */
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+ .menu-toggle.active span:nth-child(2) {
+    /* Hide the second line of the menu toggle button when the menu is open */
+    opacity: 0;
+  }
+  nav ul.active {
+    /* Show the navigation menu when the menu is open */
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  nav ul.active li {
+    /* Style the navigation menu items */
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  nav ul.active li a {
+    /* Style the navigation menu links */
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  nav ul.active li a:hover {
+    /* Style the navigation menu links on hover */
+    background-color: #333;
+    color: #fff;
   }
 }
