@@ -166,3 +166,27 @@ footer {
     margin: 10px 0;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  /* CSS styles for screens smaller than 600px */
+  header {
+    /* Reduce the font size of the logo and header */
+    font-size: 16px;
+  }
+  nav ul {
+    /* Hide the navigation menu */
+    display: none;
+  }
+ .splash {
+    /* Reduce the font size of the splash header */
+    font-size: 24px;
+  }
+ .hero {
+    /* Reduce the size of the hero images */
+    max-width: 300px;
+  }
+ .services {
+    /* Reduce the font size of the services section */
+    font-size: 14px;
+  }
+}
