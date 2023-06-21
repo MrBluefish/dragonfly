@@ -4,6 +4,75 @@
     <link rel="stylesheet" href="ajarn.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8">
+    <style>
+        @media only screen and (max-width: 600px) {
+          /* Adjust the font size and line height for smaller screens */
+          body {
+            font-size: 14px;
+            line-height: 1.5;
+          }
+        
+          /* Adjust the width of the image for smaller screens */
+         .ajarn-ken {
+            width: 100%;
+          }
+        
+          /* Adjust the font size and line height for smaller screens in the footer */
+         .footer {
+            font-size: 12px;
+            line-height: 1.5;
+          }
+        }
+
+        @media only screen and (min-width: 601px) {
+        /* Adjust the font size and line height for larger screens */
+        body {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+         /* Adjust the width of the image for larger screens */
+        .ajarn-ken {
+             width: 50%;
+         }
+
+        /* Adjust the font size and line height for larger screens in the footer */
+        .footer {
+            font-size: 14px;
+            line-height: 1.8;
+         }
+        } 
+    </style>
+    <script>
+        window.addEventListener("resize", function() {
+          var width = window.innerWidth;
+          var height = window.innerHeight;
+        
+          if (width < 600) {
+            // Adjust the font size and line height for smaller screens
+            document.body.style.fontSize = "14px";
+            document.body.style.lineHeight = "1.5";
+        
+            // Adjust the width of the image for smaller screens
+            document.querySelector(".ajarn-ken").style.width = "100%";
+        
+            // Adjust the font size and line height for smaller screens in the footer
+            document.querySelector(".footer").style.fontSize = "12px";
+            document.querySelector(".footer").style.lineHeight = "1.5";
+          } else {
+            // Adjust the font size and line height for larger screens
+            document.body.style.fontSize = "16px";
+            document.body.style.lineHeight = "1.8";
+        
+            // Adjust the width of the image for larger screens
+            document.querySelector(".ajarn-ken").style.width = "50%";
+        
+            // Adjust the font size and line height for larger screens in the footer
+            document.querySelector(".footer").style.fontSize = "14px";
+            document.querySelector(".footer").style.lineHeight = "1.8";
+          }
+        });
+    </script>
     <title>Ajarn</title>
 </head>
 <header> <a class="home-button" type="button"  href="./index.html">Home</a> </header>
