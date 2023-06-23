@@ -96,11 +96,12 @@ align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
-  .ajarn-ken {
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-  }
+.ajarn-ken {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
 }
 
 p {
