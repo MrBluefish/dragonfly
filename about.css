@@ -133,22 +133,24 @@
     align-items: center;
   }
   
-  .logo {
-    display: flex;
-    margin-left: 8%;
+.logo {
+    display:flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .sabucco {
+    width:25%;
+    height:auto;
+    margin: 20px auto;
+}
+
+.sabucco {
     text-align: center;
-  }
-  
-  footer {
-    margin-top: 90px;
-    margin-left: 450px;
-    margin-right: 500px;
-    padding-bottom: 10px;
-    border-bottom: 2px;
-  }
-  
+}
+footer {
+  position:relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 90px;
+  padding-bottom: 10px;
+  border-bottom: 2px;
+}
